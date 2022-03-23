@@ -1,0 +1,97 @@
+AddDefaultCharset UTF8
+
+php_value register_globals on
+php_value session.use_cookies 1
+php_value session.use_trans_sid 0
+php_value display_errors 1
+
+RewriteEngine On
+
+RewriteRule ^phpMyAdmin https://pma.nic.ru [L]
+
+RewriteCond %{HTTP_HOST} ^onegin-consulting.ru
+RewriteRule (.*) https://www.onegin-consulting.ru/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www.onegin-consulting.ru
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^favicon\.ico /landings_new/images/favicon/favicon.ico [L]
+
+#RewriteRule ^bankrotstva/(.*)$ /landings/index.php?landing=bankrotstva&action=$1 [L]
+#RewriteRule ^corporate/(.*)$ /landings/index.php?landing=corporate&action=$1 [L]
+#RewriteRule ^dolgi/(.*)$ /landings/index.php?landing=dolgi&action=$1 [L]
+#RewriteRule ^gosorgany/(.*)$ /landings/index.php?landing=gosorgany&action=$1 [L]
+#RewriteRule ^liquidation/(.*)$ /landings/index.php?landing=liquidation&action=$1 [L]
+#RewriteRule ^registration/(.*)$ /landings/index.php?landing=registration&action=$1 [L]
+#RewriteRule ^sdelki/(.*)$ /landings/index.php?landing=sdelki&action=$1 [L]
+#RewriteRule ^strahovanie/(.*)$ /landings/index.php?landing=strahovanie&action=$1 [L]
+#RewriteRule ^sudy/(.*)$ /landings/index.php?landing=sudy&action=$1 [L]
+#RewriteRule ^fizbankrotstva/(.*)$ /landings/index.php?landing=fizbankrotstva&action=$1 [L]
+#RewriteRule ^consultation-ok/(.*)$ /landings/index.php?landing=consultation-ok&action=$1 [L]
+#RewriteRule ^torgi-ok/(.*)$ /landings/index.php?landing=torgi-ok&action=$1 [L]
+
+RewriteRule ^sudy$ /sudy/ [R=301,L]
+RewriteRule ^sudy/(.*)$ /landings_new/index.php?landing=sudy&action=$1 [L]
+
+RewriteRule ^dolgi$ /dolgi/ [R=301,L]
+RewriteRule ^dolgi/(.*)$ /landings_new/index.php?landing=dolgi&action=$1 [L]
+
+RewriteRule ^fizbankrotstva$ /fizbankrotstva/ [R=301,L]
+RewriteRule ^fizbankrotstva/(.*)$ /landings_new/index.php?landing=fizbankrotstva&action=$1 [L]
+
+RewriteRule ^registration$ /registration/ [R=301,L]
+RewriteRule ^registration/(.*)$ /landings_new/index.php?landing=registration&action=$1 [L]
+
+RewriteRule ^bankrotstva$ /bankrotstva/ [R=301,L]
+RewriteRule ^bankrotstva/(.*)$ /landings_new/index.php?landing=bankrotstva&action=$1 [L]
+
+RewriteRule ^strahovanie$ /strahovanie/ [R=301,L]
+RewriteRule ^strahovanie/(.*)$ /landings_new/index.php?landing=strahovanie&action=$1 [L]
+
+RewriteRule ^gosorgany$ /gosorgany/ [R=301,L]
+RewriteRule ^gosorgany/(.*)$ /landings_new/index.php?landing=gosorgany&action=$1 [L]
+
+RewriteRule ^liquidation$ /liquidation/ [R=301,L]
+RewriteRule ^liquidation/(.*)$ /landings_new/index.php?landing=liquidation&action=$1 [L]
+
+RewriteRule ^sdelki$ /sdelki/ [R=301,L]
+RewriteRule ^sdelki/(.*)$ /landings_new/index.php?landing=sdelki&action=$1 [L]
+
+RewriteRule ^corporate$ /corporate/ [R=301,L]
+RewriteRule ^corporate/(.*)$ /landings_new/index.php?landing=corporate&action=$1 [L]
+
+RewriteRule ^consultation-ok$ /consultation-ok/ [R=301,L]
+RewriteRule ^consultation-ok/(.*)$ /landings_new/index.php?landing=consultation-ok&action=$1 [L]
+
+RewriteRule ^torgi-ok$ /torgi-ok/ [R=301,L]
+RewriteRule ^torgi-ok/(.*)$ /landings_new/index.php?landing=torgi-ok&action=$1 [L]
+
+RewriteRule ^about_company$ /about_company/ [R=301,L]
+RewriteRule ^about_company/(.*)$ /landings_new/index.php?landing=about_company&action=$1 [L]
+
+RewriteRule ^franshiza$ /franshiza/ [R=301,L]
+RewriteRule ^franshiza/(.*)$ /landings_new/index.php?landing=franshiza&action=$1 [L]
+
+RewriteRule ^corporate_new$ /corporate_new/ [R=301,L]
+RewriteRule ^corporate_new/(.*)$ /landings_new/index.php?landing=corporate_new&action=$1 [L]
+
+RewriteRule ^_галичевский/(.*)$ /landings_new/index.php?landing=galichevsky&action=$1 [L]
+
+RewriteRule ^_taro-katrin/(.*)$ /landings_new/index.php?landing=taro-katrin&action=$1 [L]
+RewriteRule ^_taro-vizitka/(.*)$ /landings_new/index.php?landing=taro-vizitka&action=$1 [L]
+RewriteRule ^taro-academy/(.*)$ /landings_new/index.php?landing=taro-academy&action=$1 [L]
+RewriteRule ^taro-shop/(.*)$ /landings_new/index.php?landing=taro-shop&action=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.*)$ index.php?action=$1&%{QUERY_STRING}
+
+AddType application/x-httpd-php .php .htm .html .phtml, js
+php_value display_errors 1
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ http://www.onegin-consulting.ru/ [R=301,L]
+
+#RewriteCond %{REQUEST_URI} /Partners.htm
+#RewriteRule (.*) http://www.onegin-consulting.ru/? [R=301,L]

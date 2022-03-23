@@ -1,0 +1,610 @@
+body{ background-image: none; background-color: #FFF; padding-top: 0; font-size: 20px; }
+h2{
+	background: url(/landings_new/images/ok-bankrotstvo/icons/red-lock.png) left center no-repeat; background-size: 33px !important;
+	margin-bottom: 35px; padding-left: 55px;
+	text-transform: uppercase; color: #264c99; font-weight: 700; text-align: left;
+}
+h2.open{ background: url(/landings_new/images/ok-bankrotstvo/icons/green-lock.png) left center no-repeat; }
+.wrapper { max-width: 960px; padding-top: 25px; position: relative; }
+.reviews{ display: none; }
+.ui-widget-content,
+.ui-dialog .ui-dialog-content{
+	border: none; border-radius: 10px;
+	font-family: 'Roboto Condensed', sans-serif; font-size: 18px;
+}
+.ui-dialog .ui-dialog-content{ background: #FFF; }
+.ui-dialog .ui-dialog-content a.close{ background-color: #ff0000; top: -8px; right: -8px; }
+
+.ui-widget input, .ui-widget select, .ui-widget textarea{ font-family: 'Roboto Condensed', sans-serif; }
+#prices_select_method_of_payment{ display: none; }
+#auth_feedback_popup{ background: none; box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.3); color: #000; display: none; }
+#auth_feedback_popup a.close{ top: 8px; right: 4px; }
+#auth_feedback_popup .close{ display: none; }
+#auth_feedback_popup button{ background-color: #ff0000; max-width: calc(100% - 20px - 20px); }
+
+#logout a.green{
+	cursor: default;
+	background-color: #f2f2f2; border-radius: 5px; border: none;
+	width: 282px; height: 39px; margin: 10px auto 0 auto;
+	text-decoration: none; font-size: 22px; text-transform: uppercase; line-height: 1.8; color: #fff; font-family: inherit; font-weight: 600;
+	display: block;
+}
+
+.bx-wrapper{ background: none; border: none; box-shadow: none; }
+
+.owl-carousel{ width: calc(100% - 100px);}
+.owl-carousel .owl-item > div{ text-align: center; }
+.owl-carousel .owl-nav button.owl-prev{
+	width: 42px !important;; height: 42px !important;;
+	position: absolute !important; left: -100px !important; top: 28% !important;
+}
+.owl-carousel .owl-nav button.owl-next{
+	width: 42px !important; height: 42px !important;
+	position: absolute !important; top: 28% !important;
+}
+
+#subscription_popup,
+#feedback_with_city{
+	box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.3); border-radius: 10px; overflow: auto;
+	max-height: calc(100vh - 20px - 20px - 20px - 20px) !important; padding: 20px 20px 25px; margin: 20px 15px;
+	font-size: 18px; display: none;
+}
+#subscription_popup .pic{
+	background: url(/landings_new/images/ok-bankrotstvo/icons/unlock.png) top no-repeat; background-size: contain;
+	width: 200px; height: 70px; padding: 5px 0 5px; margin: 0 auto;
+}
+#subscription_popup .text{ padding-bottom: 5px; }
+#subscription_popup .button{ background-color: #14cc52; }
+
+#feedback_with_city .button{ background-color: #ff0000; width: 304px; }
+
+#subscription_popup .button:hover{ background-color: #70d492; }
+#feedback_with_city .button:hover{ background-color: #f93e3e; }
+
+#subscription_popup a,
+#feedback_with_city a{ text-decoration: none; line-height: 1.8; }
+
+#subscription_popup a.close,
+#feedback_with_city a.close{ background-color: #ff0000; top: 8px; right: 4px; }
+
+#success_win{ padding: 20px 20px 0; }
+#success_win p{ margin: 0; }
+
+/* #feedback_with_city */
+#feedback_with_city{ display: none; }
+
+/* #header */
+.mainmenu{ display: none; }
+.header{
+	background: url(/landings_new/images/ok-bankrotstvo/header/background.png) center top repeat-x;
+	background-size: cover;
+	margin: 0px auto -612px auto; padding-top: 0;
+}
+.header .contacts_details{ font-size: 28px; padding-top: 15px; }
+.header .contacts_details img{ height: 73px; }
+.header .contact_info{ align-items: flex-end; }
+.header .contact_info .extra-info{
+	width: 180px; height: 40px;
+}
+.header .contact_info .phone a{ color: #264c99; text-decoration: none; }
+.header .title{ margin-top: 60px; text-transform: uppercase; color: #264c99; }
+.header .title span{ color: #ff0000; }
+
+/* feedback */
+.feedback .els .el:nth-child(1){ background: none; box-shadow: none; padding-top: 0; }
+.feedback .els .el:nth-child(1) .description{ padding-bottom: 30px; }
+
+.feedback .els .el:nth-child(1) .description a{ cursor: pointer; text-decoration: none; color: #3399ff !important; }
+.feedback .els .el:nth-child(1) .description a:hover{ text-decoration: underline; }
+
+.feedback .els .el:nth-child(2) .feedback_button{
+	background: #fff; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px;
+	padding: 25px; margin-top: 30px;
+}
+.feedback .els .el:nth-child(2) .feedback_button .button{
+	background-color: #ff0000; border: none; border-radius: 5px;
+    height: 39px; width: 282px; margin: 0 auto;
+	font-family: inherit; font-weight: 600; font-size: 22px; color: #fff; text-transform: uppercase;
+	display: block;
+}
+.feedback .els .el:nth-child(2) .feedback_button .button:hover{ background-color: #ef6d6d; }
+.feedback .els .el.theses{
+	background: url(/landings_new/images/ok-bankrotstvo/feedback/product-box.png) -60px bottom no-repeat; background-size: 45%;
+    z-index: 1000; padding: 3px 25px 0 220px;
+    display: flex; flex-direction: column; justify-content: center;
+}
+.feedback .els .el.theses .thesis{ padding: 10px 0 10px 0; display: flex; justify-content: space-between; align-items: center; }
+.feedback .els .el.theses .thesis .icon{
+	background: url(/landings_new/images/check.png) center no-repeat;
+    width: 100%; height: 40px; max-width: 40px; background-size: 100% !important;
+}
+.feedback .els .el.theses .thesis:nth-child(1) .text{ margin-left: 55px; }
+.feedback .els .el.theses .thesis .text{ margin-left: 15px; }
+.feedback .els .el .note{ margin-top: 30px; text-align: center; }
+
+.feedback .note a{ color: #3399ff !important; text-decoration: none; }
+.feedback .note a:hover{ text-decoration: underline; }
+
+body .form{
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px; border-radius: 10px;
+    width: 320px; height: auto; padding: 20px; text-align: center;
+    background: #FFF !important;
+}
+body .form.disabled{ color: #666; }
+body .form .title{
+    margin: initial; padding: 0;
+    text-transform: uppercase; font-weight: 700; font-size: 22px;
+}
+body .form .title:nth-child(2){ padding: 0 0 9px; font-weight: 700; font-size: 22px; color: inherit; }
+body .form .button,
+body .form .btn-buy,
+body .form button{
+    background: none; border-radius: 5px; font-weight: 600; font-size: 22px;
+	display: block; margin: 5px auto 0 auto; width: 304px;
+}
+body .form .btn-buy{
+	text-decoration: none; font-size: 22px; text-transform: uppercase; color: #f2f2f2; line-height: 1.8;
+}
+body .form button.blue{ background-color: #3399ff; border: none; text-transform: uppercase; color: #f2f2f2; }
+body .form.open button.blue{ background-color: #264b99; }
+body .form.open button.blue:hover{ background-color: #566a96 !important; }
+
+body .form button.blue:hover,
+.offline_support .form .buttons .attached + label:hover{ background-color: #67b3ff !important; }
+body .form.disabled button.blue{ background-color: #f2f2f2; color: #666; }
+body .form .btn-buy.red{ background-color: #ff0000; }
+
+body .form .btn-buy.green{ background-color: #14cc52; }
+body .form.open .button.green{ text-decoration: none; font-size: 22px; text-transform: uppercase; line-height: 1.8; background-color: #f2f2f2; color: #fff; }
+
+body .form .btn-buy.green:hover{ background-color: #70d492; }
+body .form.open .button.green:hover{ background-color: #f2f2f2; }
+
+body .form input{
+    box-shadow: none; border-radius: 5px; border: 1px solid transparent; padding: 12px 10px !important;
+    font-family: 'Roboto Condensed', sans-serif; font-weight: 300; font-size: 18px; background: #f2f2f2 !important;
+}
+
+body .form input.error{ border: 1px solid rgba(255,0,0,0.8); box-shadow: none; }
+
+/* first_consultation */
+.first_consultation .wrapper{ background: url(/landings_new/images/ok-bankrotstvo/first-consultation/galichevsky.png) right bottom no-repeat; background-size: 40%; }
+.first_consultation .els{ margin-right: 300px; display: flex; justify-content: space-between; align-items: center; }
+.first_consultation .els .el a{ text-decoration: none; color: #3399ff !important; }
+.first_consultation .els .el a:hover{ text-decoration: underline; }
+.first_consultation .els .el p:nth-child(1){ margin: 0; }
+.first_consultation .els .el p:nth-child(2){ margin: 0; }
+
+/* guide */
+.guide{ background: #f2f2f2; }
+.guide .els{ display: flex; justify-content: space-between; }
+.guide .els .el:nth-child(2){
+	background: url(/landings_new/images/ok-bankrotstvo/guide/books.png) center no-repeat;
+	min-width: 280px; height: 250px;
+}
+.guide .litres{ margin-top: 15px; display: flex; justify-content: space-between; }
+.guide .litres .el{ background: #ffffff; border-radius: 5px; width: calc(50% - 24px - 10px); padding: 12px; font-size: 17px; }
+.guide .litres .el .top{ color: #b3b2b4; margin-bottom: 17px; display: flex; justify-content: space-between; }
+.guide .litres .el .top .logo{
+	background: url(/landings_new/images/ok-bankrotstvo/guide/litres-logo.png) center no-repeat;
+	width: 100px; height: 35px;
+}
+.guide a{ color: #3399ff !important; text-decoration: none; }
+.guide a:hover{ text-decoration: underline; }
+
+/* bankrotstvo_process */
+.bankrotstvo_process .els{
+	background: linear-gradient(to right, #e5f2ff 0%, #f9f2ff 100%); border-radius: 10px;
+	margin-bottom: 20px; padding: 30px; font-size: 15px;
+	display: flex; justify-content: space-between;
+}
+.bankrotstvo_process .els  .el .top,
+.bankrotstvo_process .els  .el .middle,
+.bankrotstvo_process .els  .el .bottom{
+	border-radius: 10px;
+	display: flex; justify-content: space-between; align-items: center;
+}
+.bankrotstvo_process .els  .el .top,
+.bankrotstvo_process .els  .el .bottom{ padding: 12px; }
+
+.bankrotstvo_process .els  .el .top .stage,
+.bankrotstvo_process .els  .el .middle .stage{ width: 100%; max-width: calc(25% - 24px); }
+.bankrotstvo_process .els  .el .middle .stage{
+	text-align: center; color: #fff; padding: 12px; position: relative;
+}
+
+.bankrotstvo_process .els  .el .top .stage{ text-align: center; }
+.bankrotstvo_process .els  .el .middle .stage:last-child:after{
+	content: ""; border: 13px solid transparent;
+    border-left: 27px solid #e9abfe; height: 0;     height: 0px;
+    position: absolute; right: -45px; top: 10px;
+}
+
+.bankrotstvo_process .els  .el .middle .stage:nth-child(1){ background: linear-gradient(to right, #84abfe 0%,#99abfe 100%); }
+.bankrotstvo_process .els  .el .middle .stage:nth-child(2){ background: linear-gradient(to right, #99abfe 0%,#b8abfe 100%); }
+.bankrotstvo_process .els  .el .middle .stage:nth-child(3){ background: linear-gradient(to right, #b9abfe 0%,#d6abfe 100%); }
+.bankrotstvo_process .els  .el .middle .stage:nth-child(4){ background: linear-gradient(to right, #d6abfe 0%,#e9abfe 100%); }
+
+.bankrotstvo_process .els  .el .bottom{ justify-content: center; }
+.bankrotstvo_process .els  .el .bottom .stage{ width: 26%; text-align: center; font-size: 15px; color: #295fcc; }
+
+.bankrotstvo_process .els  .el:nth-child(2){ max-width: 200px; padding: 40px 0 0 40px; }
+.bankrotstvo_process .els  .el .pic{
+	background: url(/landings_new/images/ok-bankrotstvo/icons/smile.png) center no-repeat;
+	width: 60px; height: 60px; margin: 0 auto 15px;
+}
+.bankrotstvo_process .text a{ color: #3399ff !important; text-decoration: none; }
+.bankrotstvo_process .text a:hover{ text-decoration: underline; }
+
+/* videos */
+.videos{ background: #f2f2f2; }
+.videos .els{ display: flex; align-items: center; }
+.videos .arrow-left{
+	cursor: pointer; background: url(/landings_new/images/ok-bankrotstvo/video/arrow-left.png) center no-repeat; background-size: contain;
+	min-width: 45px; height: 45px; margin-top: -15px; display: block;
+}
+.videos .arrow-right{
+	cursor: pointer; background: url(/landings_new/images/ok-bankrotstvo/video/arrow-right.png) center no-repeat; background-size: contain;
+	min-width: 45px; height: 45px; margin-top: -15px; display: block;
+}
+.videos .owl-dot,
+.videos .owl-nav{ display: none; }
+
+/* needed_documents */
+.needed_documents .wrapper{
+	background: url(/landings_new/images/ok-bankrotstvo/documents/folder.png) right 70% no-repeat;
+	background-size: 250px;
+}
+.needed_documents .el{ width: calc(100% - 150px - 20px); }
+.needed_documents .el li a{ color: #3399ff !important; text-decoration: none; }
+.needed_documents .el li a:hover{ text-decoration: underline; }
+
+/* offline_support */
+.offline_support{ background: #f2f2f2; }
+.offline_support .els{ align-items: initial; }
+.offline_support .els .el a{ color: #3399ff !important; text-decoration: none; }
+.offline_support .els .el a:hover{ text-decoration: underline; }
+.offline_support .els .el .pic{
+	background: url(/landings_new/images/ok-bankrotstvo/icons/envelope.png) left center no-repeat; background-size: contain;
+	width: 200px; height: 180px;
+}
+.offline_support .form input,
+.offline_support .form textarea{
+	box-shadow: none; background: #f2f2f2; border: 1px solid transparent;
+	font-family: 'Roboto Condensed', sans-serif; font-weight: 400; font-size: 14px; color: #666;
+}
+.offline_support .form textarea{ height: 115px; resize: none; }
+.offline_support .form input.error,
+.offline_support .form textarea.error{ background: #f5f5f5; }
+.offline_support .form .buttons{ display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.offline_support .form .buttons .file_to_send{ width: 100%; margin: 8px 0 0 8px; text-align: left; font-size: 14px; }
+.offline_support .form .remove_files_to_send{
+	display: none; cursor: pointer; width: 100%; margin: 8px 0 0 8px;
+	color: #b3b3b3; text-align: left; font-size: 14px; text-decoration: underline;
+}
+.offline_support .form .buttons .button,
+.offline_support .form .buttons button{ width: 258px; }
+.offline_support .form .buttons .attached{ opacity: 0; position: absolute; margin: 3px 0; width: 30px; }
+.offline_support .form .buttons .attached + label{
+	cursor: pointer; background: #3399ff url(/landings_new/images/ok-bankrotstvo/icons/attach.png) center no-repeat !important; background-size: 60% !important;
+	border: none; border-radius: 5px; z-index: 1000;
+	width: 38px; height: 38px; margin: 0 0 0 auto; padding: 0 !important;
+}
+.offline_support .form .buttons label span{  display: block; margin-top: 42px; font-size: 12px; }
+.offline_support .note{ margin-top: 15px; font-size: 14px; color: #333; }
+
+/* related_links */
+.related_links .els{ display: flex; justify-content: space-between; align-items: center; }
+.related_links .els .el:nth-child(1) .link_description{ margin-bottom: 25px; }
+.related_links .els .el:nth-child(1) .link_description:last-child{ margin-bottom: 0; }
+.related_links .els .el:nth-child(1) .link_description .title{ margin-bottom: 12px; }
+.related_links .els .el:nth-child(1) .link_description .text{ background: #f2f2f2; border-radius: 5px; color: #808080; padding: 22px; }
+.related_links .els .el:nth-child(1) .link_description .text .wrap.hidden{ display: none; }
+.related_links .els .el:nth-child(1) .link_description .text a{ color: #3399ff !important; text-decoration: none; overflow-wrap: break-word; }
+.related_links .els .el:nth-child(1) .link_description .text a:hover{ text-decoration: underline; }
+.related_links .els .el:nth-child(1) .link_description .text a.less{ cursor: pointer; display: block; text-align: right; font-size: 16px; }
+.related_links .els .el:nth-child(1) .link_description .text a.less:hover{ text-decoration: underline; }
+.related_links .els .el:nth-child(1) .link_description .text .wrap{ margin-top: 15px; }
+
+.related_links .els .el:nth-child(2){
+	background: url(/landings_new/images/ok-bankrotstvo/icons/arrow.png) top center no-repeat; background-size: contain;
+	min-width: 250px; height: 250px; margin-left: 40px;
+}
+
+/* policy */
+.policy{ background-color: #d9d9d9; }
+.policy .wrapper{ padding-bottom: 25px; }
+.policy .open_policy{
+	color: #a09f9f; text-align: center; display: block; text-decoration: none;
+}
+#policy_win a.close{ top: -8px; right: -8px;}
+
+/* footer */
+.footer{ background: #264c99; color: #fff; padding: 25px 0; }
+.footer .disclaimer{ font-size: 20px; font-weight: 300; text-align: center; }
+
+/* форма оплаты */
+#prices_select_method_of_payment{ display: none; }
+#prices_select_method_of_payment{ background: #FFF; height: auto !important; padding: 20px 0; }
+#prices_select_method_of_payment table{
+	width: 100%;
+	font-family: 'Roboto Condensed', sans-serif; font-size: 16px;
+}
+#prices_select_method_of_payment tr td{ padding: 10px 0; }
+#prices_select_method_of_payment tr td:nth-child(1){ padding: 0 7px 0 15px; }
+#prices_select_method_of_payment .selector-type-payment img{
+	cursor: pointer;
+	border: 1px solid #cec9c9; height: 16px; padding: 8px 6px; margin-right: -1px;
+	position: relative;
+}
+#prices_select_method_of_payment .selector-type-payment img:hover{ z-index: 1000; border: 1px solid #9c9999; }
+#prices_select_method_of_payment .selector-type-payment img.active{ background: #ffea97; }
+#prices_select_method_of_payment .selector-type-payment img:first-child{ border-radius: 3px 0 0 3px; }
+#prices_select_method_of_payment .selector-type-payment img:last-child{ border-radius: 0 3px 3px 0; }
+#prices_select_method_of_payment input[type="submit"]{
+	cursor: pointer;
+	border: none; border-radius: 5px; background: #ffdb4d; padding: 8px 15px;
+}
+#prices_select_method_of_payment input:hover{ background: #FFD633; }
+
+@media(min-width: 1024px){
+	/* header */
+	.header{ height: 775px; }
+	.header .contact_info{ margin-right: 20px; }
+	.contact_info .address{ font-size: 18px; }
+	.header .company_name span{ border-bottom: 2px solid #000; font-size: 23px; }
+	.header .company_name .description{ font-size: 22px; }
+
+    /* feedback */
+	.feedback .wrapper{ padding-bottom: 0; }
+	.feedback .els .el:nth-child(1){ width: auto; font-size: 20px; padding: 0 40px 0 0; }
+	.feedback .form{ width: 280px; }
+	.feedback .form input{ width: 260px; }
+	.feedback .form.open input::placeholder{ color: #FFF; }
+	body .form .title{ margin-bottom: 10px; color: #264c99; }
+	body .form input{ padding: 12px 10px !important; }
+	body .form .button,
+	body .form .btn-buy,
+	body .form button{ width: 282px; height: 39px; margin: 10px auto 0 auto; font-family: inherit; }
+
+	/* first_consultation */
+	.first_consultation .wrapper{ padding-top: 35px; }
+
+	/* bankrotstvo_process */
+	.bankrotstvo_process .els  .el .middle .stage:nth-child(1){
+		border-top-left-radius: 10px; border-bottom-left-radius: 10px;
+	}
+	.bankrotstvo_process .els  .el .middle .stage:last-child{
+		border-top-right-radius: 10px; border-bottom-right-radius: 10px;
+	}
+	.bankrotstvo_process .els  .el .middle .stage:after{
+		content: ''; border-right: 3px solid #fff;
+		height: 120%;
+		position: absolute; right: 0; top: 0; bottom: 0;
+	}
+
+	/* needed_documents */
+	.needed_documents h2{ margin-bottom: 20px; }
+
+	/* offline_support */
+	.offline_support .form{ margin-top: -60px; }
+	.offline_support .form input,
+	.offline_support .form textarea{ margin: 0 auto 12px auto; }
+
+	.offline_support .form input:nth-child(1){ margin-top: 35px; }
+
+	.offline_support .form input:nth-child(2),
+	.offline_support .form textarea{
+		border-radius: 5px;
+		width: 282px; padding: 10px 10px; display: block;
+	}
+	.offline_support .form .button,
+	.offline_support .form button{ margin-top: 0; }
+
+	.offline_support .note{  width: 350px; }
+
+	.form input.error,
+	.form textarea.error{ box-shadow: none; border: 1px solid #ff0000; }
+}
+
+@media(max-width: 1024px){
+    body{ background: #FFF; }
+    .header .title{ font-size: 32px; }
+    h2{ min-height: 33px; margin-bottom: 15px; font-size: 32px; display: flex; align-items: center; }
+    .header .small-title{ font-size: 27px;  }
+	#auth_feedback_popup{ height: 120px !important;}
+
+    .wrapper{ max-width: 770px; }
+
+    /* header */
+    .header{ background-size: cover; height: 740px; margin: 0 auto -500px auto; }
+	.header .title:last-child{ display: block !important; }
+	.contacts_details{ align-items: center; }
+
+    /* form */
+	.feedback{ background: none; }
+	.feedback .wrapper{ padding-top: 0; }
+	.feedback .els{ flex-direction: column; }
+	.feedback .els .el{ color: #000000 !important; font-weight: 300 !important; }
+	.feedback .els .el.theses{ background: none; background-color: inherit !important; padding-left: 0; }
+	.feedback .els .el.theses .thesis{ justify-content: left; }
+	.feedback .els .el.theses .thesis .icon{ background-size: 50% !important; }
+	.feedback .els .el:nth-child(1){ padding-bottom: 30px; }
+	.feedback .els .el:nth-child(2){
+		background-color: #f2f2f2;
+		margin-left: -10px; margin-right: -10px; padding-bottom: 25px;
+	}
+	.feedback .els .el.theses .thesis:nth-child(1) .text{ width: 100%; text-align: center; }
+	.feedback .els .el:nth-child(2) .feedback_button{ background: none; box-shadow: none; padding-top: 0; padding-bottom: 0; }
+	.feedback .els .el:nth-child(2) .feedback_button .button{ width: 100%; }
+
+    .feedback .wrapper .form{
+        box-shadow: none; background-color: #f2f2f2 !important; height: auto; border-radius: 0;
+        width: calc(100% - 50px - 10px );  margin: 0 auto; padding: 20px 25px 0 25px;
+        display: flex; flex-wrap: wrap; justify-content: space-between;
+    }
+
+	body .form .title{ width: 100%; margin-bottom: 15px; font-size: 25px; color: #264c99; }
+
+    .wrapper .form input{
+        border-radius: 3px; background: #fff !important; border: 2px solid rgba(0,0,0,0); box-shadow: none;
+        width: calc(100% - 10px - 10px); margin:0 0 10px 0; padding: 13px 10px;
+    }
+    .wrapper .form input.error{ border: 2px solid; border-color: rgba(255,0,0,0.8); }
+    .wrapper .form .button,
+	.wrapper .form button{ width: 100%; text-transform: uppercase; height: 40px; }
+	.wrapper .form textarea{ padding: 10px 0 0 12px; }
+	body .form .btn-buy{ width: 100%; }
+
+	 /* first_consultation */
+	.first_consultation .wrapper{ background: none; padding-top: 10px; }
+	.first_consultation .els{ margin-right: 0; }
+	.first_consultation .els .el{ display: flex; flex-wrap: wrap; }
+	.first_consultation .els .el p:nth-child(1){ width: 100%; }
+	.first_consultation .els .el p:nth-child(2){ width: 100%; }
+	.first_consultation .els .el .photo{
+		display: none !important;
+		background: url(/landings_new/images/ok-bankrotstvo/first-consultation/galichevsky.png) bottom no-repeat; background-size: contain !important;
+		width: 400px; max-width: 50%; max-height: 250px; margin-bottom: -25px; margin-top: 10px;
+	}
+
+	/* guide */
+	.guide .els{  margin-right: -10px; }
+	.guide .els .el:nth-child(2){
+		background: url(/landings_new/images/ok-bankrotstvo/guide/books-mob.png) right center no-repeat; background-size: contain !important;
+		min-width: 150px; height: auto;
+	}
+	.guide .els .el .title{ font-weight: 600; margin-bottom: 0; }
+	.guide .litres{ flex-direction: column; }
+	.guide .litres .el{ width: calc(100% - 24px); }
+	.guide .litres .el:nth-child(1){ margin-bottom: 15px; }
+
+	/* bankrotstvo_process */
+	.bankrotstvo_process .els{ background: linear-gradient(to bottom, #f7f2ff 0%,#e5f2ff 100%); flex-direction: column; align-items: center; }
+	.bankrotstvo_process .els .el:nth-child(1){ display: flex; }
+	.bankrotstvo_process .els .el .top,
+	.bankrotstvo_process .els .el .middle,
+	.bankrotstvo_process .els .el .bottom{ width: 33%; flex-direction: column; justify-content: space-around; }
+
+	.bankrotstvo_process .els .el .top .stage{ max-width: 100%; text-align: right; }
+
+	.bankrotstvo_process .els .el .middle .stage{
+		height: 100px; width: calc(50px - 24px); max-width: 100%;
+		display: flex; align-items: center;
+	}
+	.bankrotstvo_process .els  .el .middle .stage:nth-child(1){ background: linear-gradient(to bottom, #deabfe 0%,#ecb4ff 100%); }
+	.bankrotstvo_process .els  .el .middle .stage:nth-child(2){ background: linear-gradient(to bottom, #ecb4ff 0%,#c1abfe 100%); }
+	.bankrotstvo_process .els  .el .middle .stage:nth-child(3){ background: linear-gradient(to bottom, #c1abfe 0%,#b4b5ff 100%); }
+	.bankrotstvo_process .els  .el .middle .stage:nth-child(4){ background: linear-gradient(to bottom, #b4b5ff 0%,#8cabfe 100%); }
+
+	.bankrotstvo_process .els .el .middle .stage:nth-child(1){ border-top-left-radius: 10px; border-top-right-radius: 10px; }
+	.bankrotstvo_process .els .el .middle .stage:last-child{ border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; }
+	.bankrotstvo_process .els .el .middle .stage:after{
+		content: ''; border-bottom: 3px solid #5881d8;
+		width: 120%; right: -10px;
+		position: absolute; top: 31px; bottom: -1px; z-index: 1000;
+	}
+	.bankrotstvo_process .els .el .middle .stage:last-child:after{
+		content: ""; border: 17px solid transparent; border-top: 29px solid #e9abfe;
+		height: 0; position: absolute;
+		right: 9px; top: 130px; width: 0;
+	}
+	.bankrotstvo_process .els .el:nth-child(2){ padding: 60px 0 0; text-align: center; }
+	.bankrotstvo_process .els .el .bottom{ justify-content: space-evenly; }
+	.bankrotstvo_process .els .el .bottom .stage{ width: 100%; text-align: left; }
+
+	/* needed-documents */
+	.needed_documents .wrapper{
+		background: url(/landings_new/images/ok-bankrotstvo/documents/folder-mob.png) right center no-repeat; background-size: 150px;
+	}
+
+	/* offline_support */
+	.offline_support .wrapper{ padding-bottom: 0; }
+	.offline_support .els .el:nth-child(1){ margin-top: 0; color: initial; }
+	.offline_support .els .el:nth-child(2){ margin-right: -10px; margin-left: -10px; }
+	.offline_support .form{ box-shadow: none; border-radius: 0; width: calc(100% - 20px - 20px) !important; }
+	.offline_support .form.disabled .title{ color: #666; }
+	.offline_support .form input{ background: #f2f2f2 !important; }
+	.offline_support .form textarea{ border-radius: 5px; width: 100%; margin-bottom: 7px; }
+	.offline_support .form .buttons{ width: 100%; }
+	.offline_support .form .buttons .attached{ width: 40px; height: 40px; margin-top: 5px; }
+	.offline_support .form button.blue{ width: calc(100% - 47px)!important; }
+	.offline_support .form .buttons .file_to_send{ color: #000; }
+	.offline_support .form .buttons .attached + label{ width: 40px; height: 40px; margin-top: 5px; }
+	.offline_support .note{ margin: 15px; color: initial;}
+
+	/* related_links */
+	.related_links .els .el{ width: 100%; }
+	.related_links .els .el:nth-child(1) .link_description .text a.less{ margin-top: 15px; }
+}
+
+@media (max-width: 770px){
+    .first_consultation .els .el,
+	.guide .els .el,
+	.bankrotstvo_process .text,
+    .footer .disclaimer,
+	.needed_documents .el,
+	.wrapper .form input,
+	.wrapper .form textarea,
+	.feedback_2 .els .el:nth-child(1),
+	.related_links .els .el,
+	.company_name .description,
+	.policy .open_policy,
+	.guide .litres .el,
+	.feedback .els .el .note{ font-size: 2.9vw; font-weight: initial; }
+
+	.bankrotstvo_process .els .el{ font-size: 2.8vw; }
+	.bankrotstvo_process .els .el .bottom .stage,
+	.offline_support .note,
+	.offline_support .form .remove_files_to_send,
+	.related_links .els .el:nth-child(1) .link_description .text a.less{ font-size: 2.7vw; }
+
+	.header .small-title{ height: 6.5vw; }
+
+	.feedback .els .el:nth-child(1){ padding-bottom: 0; }
+	.feedback .els .el:nth-child(1) .description{ padding-bottom: 10px; }
+
+	h2, .header .title{ font-size: 4.8vw !important; }
+
+	.first_consultation .els .el .photo{ min-height: 150px; }
+
+	/* #prices_select_method_of_payment iframe{ transform: scale(0.75, 0.75) translateX(-142px) translateY(0px); } */
+}
+
+@media (max-width: 480px){
+    .first_consultation .els .el,
+	.guide .els .el,
+	.bankrotstvo_process .text,
+    .cooperation .els .el:nth-child(2),
+    .footer .disclaimer,
+	.needed_documents .el,
+	.wrapper .form input,
+	.wrapper .form textarea,
+	.feedback_2 .els .el:nth-child(1),
+	.related_links .els .el,
+	.company_name .description,
+	.feedback .els .el:nth-child(1),
+	.policy .open_policy,
+	.guide .litres .el,
+	.feedback .els .el .note{ font-size: 4.3vw; }
+
+    .bankrotstvo_process .els  .el{ font-size: 4vw; }
+	.bankrotstvo_process .els .el .bottom .stage,
+	.offline_support .note,
+	.offline_support .form .remove_files_to_send,
+	.related_links .els .el:nth-child(1) .link_description .text a.less{ font-size: 3.9vw; }
+
+	.header .small-title h2{ font-size: 4.8vw !important; }
+    h2, .header .title{ font-size: 5.4vw !important; }
+
+	.header{ height: 850px; margin: 0 auto -680px auto; }
+	.header .title{ margin-top: 40px; }
+}
+
+
+@media (max-width: 350px){
+	.header{ height: 850px; margin: 0 auto -715px auto; }
+	.header .title{ margin-top: 40px; }
+	.prices .els .el .icon{ height: 60px; }
+	.prices .els .el .btn-buy{ width: auto; }
+}

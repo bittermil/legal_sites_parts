@@ -1,0 +1,441 @@
+body{ background-image: none; background-color: #FFF; padding-top: 0; font-size: 20px;  }
+h2{ text-transform: uppercase; font-weight: 700; margin-bottom: 35px; }
+.wrapper{ max-width: 960px; position: relative; padding-top: 25px; }
+#prices_select_method_of_payment{ display: none; }
+.ui-widget-content,
+.ui-dialog .ui-dialog-content{ border: none; }
+.ui-dialog a.close{ 
+    background: #cc1414 url(/landings_new/images/close.png) center no-repeat; background-size: 12px 12px;
+}
+.ui-dialog a.close:hover{ background: #ee5e5e url(/landings_new/images/close.png) center no-repeat; background-size: 12px 12px; }
+.ui-widget input, .ui-widget select, .ui-widget textarea{ font-family: 'Roboto Condensed', sans-serif; }
+.mainmenu{ display: none; }
+
+/* #header */
+.header{
+    background: url(/landings_new/images/taro-academy/header/header_bg.png) center repeat-x; background-size: cover;
+    background-size: cover;
+    height: 685px; margin: 0 auto -382px auto;
+}
+.header .contacts_details{ font-size: 28px; padding-top: 35px; }
+.header .contact_info{ align-items: flex-end; }
+.header .contact_info .phone a{ color: #eebb55; font-weight: 600; text-decoration: none; }
+.header .contact_info .extra-info{
+    width: 180px; height: 40px;
+    background: url(/landings_new/images/header/taro_header_text_2.png) top no-repeat;
+}
+.header .title{ margin-top: 105px; color: #FFF; font-size: 40px; text-transform: uppercase; }
+.header .round_pic{
+    background: url(/landings_new/images/personal_pic.png) center no-repeat;
+    background-size: contain; width: 130px; height: 130px;
+    position: absolute; top: 20px; right: calc(50% - 65px);
+}
+
+/* #feedback, #feedback_2 */
+.feedback_2{ background: url(/landings_new/images/taro-academy/feedback/logo_bg.png) center repeat-x; background-size: cover; }
+.feedback .els .el:nth-child(1){ font-size: 18px; }
+.feedback .els .el:nth-child(1) .lines .line{ background-size: contain; padding-left: 48px; margin: 25px 0; }
+.feedback .els .el:nth-child(1) .lines .line:nth-child(1){ background: url(/landings_new/images/page-icons/star-bulb.png) left center no-repeat; }
+.feedback .els .el:nth-child(1) .lines .line:nth-child(2){ background: url(/landings_new/images/page-icons/gold-diploma.png) left center no-repeat; }
+.feedback .els .el:nth-child(1) .lines .line:nth-child(3){ background: url(/landings_new/images/page-icons/gold-people.png) left center no-repeat; }
+
+.feedback .comment{ color: #FFF; margin-top: 10px; font-size: 18px; }
+.feedback .comment a{ color: inherit; text-decoration: none; }
+.feedback .comment a:hover{ text-decoration: underline; }
+
+.feedback_2 .els .el:nth-child(1) .lines .line:nth-child(1){
+    background: url(/landings_new/images/page-icons/phone.png) left center no-repeat;
+}
+.feedback_2 .els .el:nth-child(1) .lines .line:nth-child(2){
+    background: url(/landings_new/images/page-icons/taro-academy.png) left center no-repeat;
+}
+.feedback_2 .els .el:nth-child(1) .lines .line .text a{ color: #000; }
+
+.feedback_2 .els .el .round_pic{
+    background: url(/landings_new/images/personal_pic.png) center no-repeat;
+    background-size: contain; width: 176px; height: 176px; margin-right: 45px;
+}
+
+.feedback_3 .els .el .round_pic{
+    background: url(/landings_new/images/taro-academy/feedback/logo.png) center no-repeat;
+    background-size: contain; min-width: 130px; height: 130px; margin-right: 45px;
+}
+
+.feedback_2 .els .el .round_pic{ margin: 0 25px 0 30px; }
+.feedback_3 .els .el .round_pic{ margin-right: 30px; }
+
+.feedback_2 .els .el:nth-child(1){ border-radius: 10px; padding: 30px 25px; display: flex; }
+.feedback_2 .els .el:nth-child(1) .lines .line{
+    background-size: 32px 32px !important;
+    margin: 25px 14px; font-weight: 600; line-height: 40px;
+}
+.feedback .els .el:nth-child(1) .lines,
+.feedback_2 .els .el:nth-child(1) .lines{ flex-direction: column; justify-content: center; }
+
+.feedback .els .el:nth-child(1) .line:before,
+.feedback_2 .els .el:nth-child(1) .line:before{ display: none; }
+
+.feedback_2 .footer{ padding: 60px 0 13px; text-align: center; }
+.feedback_2 .footer .disclaimer{
+    color: #FFF; font-size: 16px; font-weight: 600; text-align: center; text-transform: uppercase; text-decoration: none;
+}
+.feedback_2 a.open_policy {
+    margin-top: 13px; width: 100%;
+    text-align: right; color: #666666; text-decoration: none;
+    display: inline-block;
+}
+
+.feedback_3 a{ color: #3399ff; text-decoration: none; }
+.feedback_3 a:hover{ text-decoration: underline; }
+.feedback_3 span.red{ color: #fd2626; }
+
+.form .button{
+    background: none; background-color: #eebb55; border-radius: 18px;
+    font-family: 'Roboto Condensed', sans-serif; color: initial; font-weight: 700; font-size: 20px;
+}
+.form input{ box-shadow: none; background: #e6e6e6; border: 1px solid transparent; }
+.form input.error{ background: #e6e6e6; }
+
+/* #what_you_get */
+.what_you_get .els{ display: flex; justify-content: space-between; }
+.what_you_get .el{ text-align: center; font-size: 18px; flex: 1; }
+.what_you_get .el .pic{ margin: 0 auto; width: 140px; height: 140px; background-size: contain !important; }
+.what_you_get .el:nth-child(1) .pic{ background: url(/landings_new/images/taro-academy/what-you-get/book.png) center no-repeat; }
+.what_you_get .el:nth-child(2) .pic{ background: url(/landings_new/images/taro-academy/what-you-get/done.png) center no-repeat; }
+.what_you_get .el:nth-child(3) .pic{ background: url(/landings_new/images/taro-academy/what-you-get/world.png) center no-repeat; }
+.what_you_get .el:nth-child(4) .pic{ background: url(/landings_new/images/taro-academy/what-you-get/cash.png) center no-repeat; }
+.what_you_get .el .text{ padding: 0 10px; }
+
+/* #events_header */
+.events_header{
+    background: url(/landings_new/images/taro-academy/events/events-bg.png) center no-repeat; background-size: cover;
+    color: #FFF; font-size: 80px; font-weight: 600; text-align: center; text-transform: uppercase;
+}
+.events_header .wrapper{ padding: 75px 0; }
+
+/* #events */
+.events .els{  display: flex; justify-content: space-between; align-items: flex-start; }
+.events .els .pic{ min-width: 130px; height: 130px; margin-right: 40px; }
+.events .els .description{ font-size: 18px; }
+.events .els .description a{ color: #3399ff; text-decoration: none; }
+.events .els .description a:hover{ text-decoration: underline; }
+.events .els .description .text{ margin-bottom: 20px; }
+
+.events .els .description .buttons{ display: flex; justify-content: space-between; }
+.events .els .description .button{ 
+    display: block; border: none; border-radius: 18px; background: #eebb55; 
+    width: 336px; padding: 12px;
+    font-size: 19px; white-space: nowrap; color: initial; text-decoration: none; text-align: center;
+}
+.events .els .description .button:hover{ background: #ca9c41; text-decoration: none; }
+
+.events.free_lives .els,
+.events.free_breakfasts .els{ align-items: center; }
+
+.events.free_lives,
+.events.esoteric_parties,
+.events.online_education,
+.events.remote_education,
+.events.associated_services{ background: #f2f2f2; }
+
+.events.free_lives .els .pic{ background: url(/landings_new/images/taro-academy/events/live.png) center no-repeat; background-size: contain; }
+.events.free_breakfasts .els .pic{ background: url(/landings_new/images/taro-academy/events/breakfast.png) center no-repeat; background-size: contain; }
+.events.esoteric_parties .els .pic{ background: url(/landings_new/images/taro-katrin/events/candle.png) center no-repeat; background-size: contain; }
+.events.online_marathon .els .pic{ background: url(/landings_new/images/taro-katrin/events/marathon.png) center no-repeat; background-size: contain; }
+.events.online_education .els .pic{ background: url(/landings_new/images/taro-katrin/events/online-study.png) center no-repeat; background-size: contain; }
+.events.offline_education .els .pic{ background: url(/landings_new/images/taro-katrin/events/offline-study.png) center no-repeat; background-size: contain; }
+.events.remote_education .els .pic{ background: url(/landings_new/images/taro-academy/events/remote.png) center no-repeat; background-size: contain; }
+.events.personal_lessons .els .pic{ background: url(/landings_new/images/taro-katrin/events/individual.png) center no-repeat; background-size: contain; }
+.events.associated_services .els .pic{ background: url(/landings_new/images/taro-academy/events/services.png) center no-repeat; background-size: contain; }
+
+.events span.red{ color: #fd2626; }
+
+/* #missed_lesson */
+.missed_lesson{ background: url(/landings_new/images/taro-academy/missed-lesson/missed-lesson-bg.png) center no-repeat; background-size: cover; }
+
+/* cooperation */
+.cooperation .els{ display: flex; justify-content: space-between; align-items: center; }
+.cooperation .els .el{ font-size: 20px; }
+.cooperation .els .el:nth-child(1){
+    background: url(/landings_new/images/galichevsky/icons/info.png) center no-repeat;
+    width: 66px; height: 66px;
+}
+.cooperation .els .el a{ color: #3399ff; text-decoration: none; }
+.cooperation .els .el a:hover{ text-decoration: underline; }
+.cooperation .els .el:nth-child(2){ width: calc(100% - 66px - 20px); }
+
+@media(min-width: 1024px){
+    h2{ font-size: 32px; }
+
+    /* feedback */
+    .feedback{ padding-top: 0; }
+    .feedback .els,
+    .feedback_3 .els{ display: flex; justify-content: space-between; align-items: center; }
+
+    .feedback .els .el:nth-child(1){ padding: 22px; }
+    .feedback_3 .els .el:nth-child(1){ padding: 15px 22px; }
+    .feedback .els .el:nth-child(1) .lines .line{ margin: 30px 0; }
+
+    .feedback .els .el:nth-child(1),
+    .feedback_2 .els .el:nth-child(1),
+    .feedback_3 .els .el:nth-child(1){
+	   border-radius: 10px; background: #FFF;
+	   width: 50%; position: relative;
+	   flex-direction: initial; font-weight: 400; display: flex; align-items: center;
+    }
+
+	.feedback .els .el:nth-child(1),
+    .feedback_3 .els .el:nth-child(1){ justify-content: center;  }
+
+
+    .feedback_2 .els .el:nth-child(1){ width: 55%; max-width: calc(555px - 25px - 25px) !important; }
+
+    .feedback .els .el:nth-child(1),
+    .feedback_2 .els .el:nth-child(1),
+    .feedback_3 .els .el:nth-child(1),
+    .feedback .wrapper .form,
+    .feedback_2 .wrapper .form,
+    .feedback_3 .wrapper .form{ box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.3); }
+
+
+    .feedback .els .el:nth-child(1):after,
+    .feedback_2 .els .el:nth-child(1):after,
+    .feedback_3 .els .el:nth-child(1):after{
+	   content: ""; border: 30px solid transparent; border-left: 30px solid #fff;
+	   position: absolute; right: -60px;
+    }
+
+    .feedback_3 .els .el:nth-child(1):after{ border-left: 30px solid #d4d4d4; }
+
+    .feedback .els .el:nth-child(1) .lines{ flex-direction: column; justify-content: center; }
+
+    .feedback_2 .els .el:nth-child(1) .lines .line{ font-size: 24px; }
+
+    .feedback .els .el:nth-child(1) .line:before,
+    .feedback_2 .els .el:nth-child(1) .line:before{ display: none; }
+
+    /* form */
+    .form{
+	   background: #FFF; border: 3px solid #fff; border-radius: 10px;
+	   box-shadow: 0px 0px 5px 0px #787676;
+	   height: 230px; position: relative;
+    }
+    .form .title{ padding-bottom: 15px; font-size: 22px; font-weight: 600; }
+    .form input.error{ box-shadow: rgba(255,0,0,0.8) 0 0 0 1px; }
+    .form .button{ width: 305px; height: 35px; margin-top: 0; }
+
+	.feedback_3 .form{ padding: 10px; }
+
+    .events .els .description .text p:nth-child(1){ margin-top: 0; }
+
+    /* what_you_get */
+    .what_you_get .el{ display: flex; flex-direction: column; justify-content: space-between; }
+}
+
+@media(max-width: 1024px){
+    body{ background: #FFF; }
+    h2{ margin-bottom: 25px; font-size: 32px; line-height: normal; }
+    .header .form .title{ font-size: 32px; margin-top: 0; } 
+
+    .header .contact_info{ flex-direction: column; } 
+
+    .wrapper{ max-width: 770px; } 
+
+	/* #header */
+    .header .contact_info .extra-info{ width: 100%; background-size: contain !important; }
+    .header{
+	   background: url(/landings_new/images/taro-academy/header/header_bg_mob_2.png) center 30px repeat-x; background-size: contain;
+	   height: 100%; padding-top: 50px; padding-bottom: 0; margin: 0; 
+    }
+    .header .title{ margin: 190px auto 20px; }
+	.header .round_pic{ width: 130px; height: 130px; right: calc(50% - 65px); top: 60px; }
+    .header .text-block .title{ font-size: 30px; }
+    .header .wrapper{ width: calc(100% - 30px - 30px); max-width: 100%; padding: 20px; }
+    .header .contacts_details{ 
+	   background-color: #002e59; color: #FFF; padding: 5px 20px; width: calc(100% - 20px - 20px);
+	   display: flex; justify-content: space-around; align-items: center; position: fixed; z-index: 10000; top: 0; right: 0; left: 0;
+    }
+    .header .social-media{ max-width: 30%; display: flex !important; justify-content: center; flex: 1; }
+    .header .social-media .el{ background-size: contain !important; width: 50px; height: 50px; margin: 0 5px; }
+    .header .social-media .viber{ background: url(/landings_new/images/page-icons/viber-upper-menu.png) center no-repeat; }
+    .header .social-media .whatsapp{ background: url(/landings_new/images/page-icons/whatsup-upper-menu.png) center no-repeat; }
+    .header .social-media .telegram{ background: url(/landings_new/images/page-icons/telegram-upper-menu.png) center no-repeat; }
+
+    .header .contact_info .phone a{ color: #FFF; }
+
+    .header .contacts_details .contact_info{ text-align: center; flex: 1; }
+    .header .contacts_details .ask-question{
+	   background: url(/landings_new/images/taro-shop/ask-question.png) left center no-repeat; background-size: contain;   
+	   width: 30%; height: 60px; flex: 1;
+    }
+
+    /* feedback */
+	.feedback{ display: none; }
+	.header .feedback{ background: none; }
+    .header .feedback .wrapper{ padding-top: 0; }
+    .header .feedback .els{ flex-direction: column; }
+    .feedback_2 .els .el{ width: calc(100% - 40px) !important; }
+    .header .feedback .els .el:nth-child(1){
+	   margin-bottom: 45px; color: initial; 
+	   display: flex; flex-direction: initial; justify-content: space-evenly; align-items: center;
+    }
+    .header .feedback .els .el:nth-child(1) .lines{ padding: 20px 10px 0; font-weight: normal; }
+    .header .feedback .els .el:nth-child(1) .lines .line{ background-size: 35px 25px !important; }
+	.header .feedback .els .el:nth-child(1) .lines .line:nth-child(1){ padding-top: 0; margin-top: 0; }
+    .header .feedback .els .el:nth-child(1) .lines .line:nth-child(3){ margin-bottom: 0; }
+
+	.header .feedback .comment{ margin-top: 20px; color: #9c9c9c; text-align: center; }
+
+	.header .form{ margin-top: 0; }
+    .form input.error{ box-shadow: rgba(255,0,0,0.8) 0 0 0 1px; }
+    .form .title{
+	   padding-top: 0; padding-bottom: 15px; margin: 0 auto;
+	   text-transform: uppercase; line-height: 28px; color: initial;
+	   font-weight: 600; font-size: 30px;
+    }
+
+    .form .button{ font-size: 16px; }
+
+    /* #what_you_get */
+    .what_you_get .els{ display: block; }
+    .what_you_get .els .el{ margin-bottom: 40px; display: flex; }
+    .what_you_get .els .el:last-child{ margin-bottom: 0; }
+    .what_you_get .els .el .pic{ min-width: 90px; width: 90px; height: 90px; }
+    .what_you_get .els .el .text{ padding: 0 0 0 20px; text-align: left; }
+    .what_you_get .els .el .text p{ margin-top: 0; }
+
+    /* #events */
+    .events_header{ font-size: 80px; }
+    .events .els .description .text p:nth-child(1){ margin-top: 0; }
+    .events .els .pic{ min-width: 90px; height: 90px; margin-right: 20px; }
+    .events .els .description .button{ border-radius: 18px; width: calc(100% - 12px - 12px); }
+    .events .els .description .buttons{ display: block; }
+    .events .els .description .buttons .button:nth-child(1){ margin-bottom: 10px; }
+    .events .els .description .text{ text-align: left; padding-right: 8px; }
+
+    .events.free_lives .els,
+    .events.free_breakfasts .els{ align-items: flex-start; }
+
+    /* #feedback_3 */
+    .feedback_3 .els .el:nth-child(1){ display: flex; }
+    .feedback_3 .els .el .text p{ margin-top: 0; }
+    .feedback_3 .els .el .round_pic{ min-width: 90px; height: 90px; }
+
+    /* #feedback_2 */
+    .feedback_2{ background-size: cover !important; background: url(/landings_new/images/feedback/taro-feedback-mobile.png) center repeat-x; }
+    .feedback_2 form{ margin-top: 10px; }
+    .feedback_2 h2{ color: initial; }
+    .feedback_2 a.open_policy{ text-align: center; }
+    .feedback_2 .els .el:nth-child(1){ display: block;  padding-top: 0; padding-bottom: 0; color: initial;  }
+    .feedback_2 .els .el:nth-child(1) .lines{ display: flex; justify-content: space-around; flex-direction: initial; }
+    .feedback_2 .els .el:nth-child(1) .lines .line{ 
+		background-size: 40px 40px !important; background-position: center top !important; 
+		padding-top: 42px; margin-left: 0; padding-left: 0;
+	}
+    .feedback_2 .els .el:nth-child(1) .round_pic{ margin: 0 auto; margin-bottom: 20px; }
+
+    /* #шрифты */
+    .feedback .els .el:nth-child(1),
+    .what_you_get .els .el .text,
+    .events.free_lives .els .el .text,
+    .events .els .el .text,
+    .feedback_3 .els .el .text p,
+    .events .els .description .button,
+    .missed_lesson,
+	.feedback .comment{ font-size: 30px; }
+
+    .form .button{ font-size: 27px; }
+
+	.cooperation{ background-color: #d7d7d7; }
+}
+
+@media (max-width: 770px){
+	.header .contact_info .phone a{ font-size: 4.2vw; }
+    .contacts_details img{ height: 50px !important; }
+    .header .title{ font-size: 7.2vw; }
+	.header .contacts_details .ask-question{ font-size: 32px; }
+    .events_header{ font-size: 10.5vw; }
+
+    .header .round_pic{ width: 100px; height: 100px; right: calc(50% - 50px); margin-top: 0; top: 30px; }
+	.header .title{ margin: 130px auto 0; }
+	.header .contacts_details .ask-question{ height: 4.9vh; }
+
+    #policy_win p,
+    #policy_win h3,
+    #policy_win ul li,
+    .feedback_2 a.open_policy,
+    .header .contact_info .extra-info
+    .form input{ font-size: 3vw; font-weight: initial; }
+
+    .what_you_get .el,
+    .events .els .description,
+    .feedback .els .el:nth-child(1),
+    .feedback_3 .els .el:nth-child(1),
+    .feedback .els .el:nth-child(1),
+    .what_you_get .els .el .text,
+    .events.free_lives .els .el .text,
+    .events .els .el .text,
+    .feedback_3 .els .el .text p,
+    .missed_lesson,
+	.cooperation .els .el:nth-child(2),
+	.feedback .comment{ font-size: 3.4vw; }
+
+    .form .button{ font-size: 3.2vw; }
+    .events .els .description .button{ font-size: 3.5vw; font-weight: 600; }
+
+    .events .els .description .buttons .button:nth-child(1){ margin-bottom: 10px; }
+
+    /* feedback */
+    .feedback .els .el .round_pic,
+    .feedback_2 .els .el .round_pic{ margin-right: 15px; }
+    .feedback .els .el:nth-child(1) .lines{ padding: 30px 10px 0; }
+    .feedback .els .el:nth-child(1) .lines .line{ background-size: 25px 20px !important; }
+
+    /* #prices_select_method_of_payment iframe{ transform: scale(0.75, 0.75) translateX(-142px) translateY(0px); } */
+
+    /* .header .round_pic{ width: 120px; height: 120px; right: calc(50% - 60px); margin-top: 20px; } */
+}
+
+@media (max-width: 480px){
+	.header{ background: url(/landings_new/images/taro-academy/header/header_bg_mob_2.png) center 54px repeat-x; background-size: 140% !important; }
+
+    #policy_win p,
+    #policy_win h3,
+    #policy_win ul li,
+    .feedback_2 a.open_policy,
+    .header .contact_info .extra-info,
+    .form input,
+    .form .button{ font-size: 4.3vw; }
+
+    .feedback .els .el:nth-child(1) .line,
+    .feedback .els .el:nth-child(1),
+    .what_you_get .els .el .text,
+    .events.free_lives .els .el .text,
+    .events .els .el .text,
+    .feedback_3 .els .el .text p,
+    .missed_lesson,
+	.cooperation .els .el:nth-child(2),
+	.feedback .comment{ font-size: 5vw; } 
+
+    .header .small-title h2,
+    form .title{ font-size: 3.8vw !important; }
+    .header .title{ font-size: 9.3vw; }
+    .events_header{ font-size: 11.3vw; }
+
+	.header .contact_info .phone a{ font-size: 4vw; }
+	.header .contacts_details .ask-question { height: 3.9vh; }
+
+    h2,
+    .form .title{ font-size: 6vw !important; }
+
+    .feedback .els .el:nth-child(1){ padding: 15px 0; font-size: 22px; }
+    .feedback .els .el:nth-child(1) .lines .line{ margin: 10px 0; }
+    .feedback_2 .els .el:nth-child(1) .lines .line{ margin: 10px 10px; }
+    .feedback_2 .els .el:nth-child(1){ padding-top: 10px; }
+    .feedback_2 .els .el:nth-child(1) .round_pic{ width: 100px; height: 100px; margin-bottom: 15px; }
+    .feedback .els .el:nth-child(1) .lines .line{ padding-left: 40px; background-position-x: 10px; }
+}
+
+@media (max-width: 380px){ 
+	.header .contacts_details .ask-question { height: 4vh; }
+}

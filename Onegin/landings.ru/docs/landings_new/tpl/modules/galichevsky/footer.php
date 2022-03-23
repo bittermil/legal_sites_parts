@@ -1,0 +1,1 @@
+<div class="disclaimer">© Галичевский Игорь</div>

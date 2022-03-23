@@ -1,0 +1,1 @@
+<div class="disclaimer">© Онегин-Консалтинг</div>

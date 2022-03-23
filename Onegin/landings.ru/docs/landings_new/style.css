@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+
+*{ outline: none; }
+
+body{ background-image: url(/landings_new/images/body.jpg); padding-top: 44px; margin: 0; font-family: 'Roboto Condensed', sans-serif; }
+
+.wrapper{ max-width: 950px; margin: 0 auto; position: relative; }
+
+input{ font-family: inherit; }
+.button{ cursor: pointer; padding: 0; }
+
+.hide_for_desktop{ display: none !important; }
+
+h2{ text-align: center; font-size: 28px; font-weight: 400; }
+
+/* menu */
+.mainmenu{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e3e3e3+0,d4d4d4+59,cfcfcf+83,dfdfdf+99,dfdfdf+99,e8e8e8+100 */
+	background: #e3e3e3; /* Old browsers */
+	background: -moz-linear-gradient(top, #e3e3e3 0%, #d4d4d4 59%, #cfcfcf 83%, #dfdfdf 99%, #dfdfdf 99%, #e8e8e8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #e3e3e3 0%,#d4d4d4 59%,#cfcfcf 83%,#dfdfdf 99%,#dfdfdf 99%,#e8e8e8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #e3e3e3 0%,#d4d4d4 59%,#cfcfcf 83%,#dfdfdf 99%,#dfdfdf 99%,#e8e8e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e3e3', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+	height: 44px; white-space: nowrap; border-top: #F1F1F1 1px solid; border-bottom: #8e9193 1px solid;
+	position: fixed; top: 0; right: 0; left: 0; z-index: 100;
+}
+.mainmenu .els a.el{ color: #555; text-decoration: none; font-size: 14px; line-height: 46px; display: inline-block; }
+.mainmenu .els a.el:hover{ text-decoration: underline; }
+.mainmenu .els a.el:after{ content: '|'; margin-left: 5px; display: block; float: right; }
+.mainmenu .els a.el:last-child:after{ display: none; }
+
+/* header */
+.header{
+	background: url(/landings_new/images/header/header.jpg) center no-repeat;
+	height: 549px; margin: 0 auto -320px auto; padding: 15px 0 0 0;
+}
+
+.header .header_top{ display: flex; justify-content: space-between; }
+.header .header_top .company_name{ font-weight: 500; font-size: 18px; text-decoration: none; }
+.header .header_top .company_name .description{ font-weight: 400; font-size: 15px; }
+.header .header_top .contact_info{
+	font-weight: 400; font-size: 15px; text-align: right;
+	display: flex; flex-direction: column;
+}
+.header .header_top .contact_info .address{ margin-right: 5px; }
+.header .header_top .contact_info .phone{ color: #c94300; font-size: 28px; font-weight: 600; }
+
+.header .title{
+	max-width: 740px; margin: 65px auto 0 auto;
+	font-weight: 700; font-size: 30px; line-height: 1; text-align: center;
+}
+
+/* feedback */
+.feedback{ padding-top: 51px; }
+.feedback .wrapper{ display: flex; justify-content: space-between; }
+.feedback .text{
+	border-radius: 10px; background-color: #f0f0f0; padding: 23px;
+	box-shadow: 0px 0px 3px 0px #787676;
+	line-height: 23px; font-size: 17px; font-weight: 400;
+}
+.feedback .text .el:before{ content: '\2022'; }
+
+.feedback .form{ background: url(/landings_new/images/feedback/form.png) no-repeat; width: 344px; height: 229px; text-align: center; }
+
+.feedback .form .title{
+	padding: 9px 0px 2px 0px; margin: initial;
+	text-transform: uppercase; font-weight: 400; font-size: 18px; line-height: 28px;
+}
+.feedback .form .title:nth-child(2){ padding-top: 1px; font-weight: 700; font-size: 25px; color: #c94300; }
+
+.feedback .form input{
+	background: url(/landings_new/images/feedback/form_input.png); border: none;
+	width: 282px; height: 14px; padding: 11px 10px; margin: 0 auto 10px auto;
+	font-weight: 400; font-size: 14px; color: #666;
+	display: block;
+}
+
+.feedback .form .button{
+	border: none; background: url(/landings_new/images/feedback/form_button.png);
+	width: 291px; height: 47px; margin-top: 5px;
+	color: #f2f2f2; font-weight: 400; font-size: 18px;
+}
+.feedback .form .button:hover{ background-position: 0 -49px; }
+.feedback .form .button:active{ background-position: 0 -98px; }
+
+/* achievements */
+.achievements{ margin-top: 63px; }
+
+.achievements .els{ display: flex; justify-content: space-around; flex-wrap: wrap;  }
+
+.achievements .header_wrapper_width_dots{
+	background: url(/landings_new/images/dots.png) center; background-repeat-y: no-repeat;
+	justify-content: center; position: relative;
+}
+.achievements .header_wrapper_width_dots h2{ background-image: url(/landings_new/images/body.jpg); }
+
+.achievements .el{ width: 246px; margin-bottom: 33px; color: #505050; text-align: center; position: relative; }
+
+.achievements .el .circle{
+	background: url(/landings_new/images/achievements/bg_for_numbers.png) center no-repeat; background-size: contain;
+	width: 246px; height: 246px; position: relative;
+}
+.achievements .el .circle .digits{
+	border-radius: 100%; transform: rotate(-15deg);
+	position: absolute; top: 8px; right: 10px; bottom: 8px; left: 8px;
+	overflow: hidden; display: flex; justify-content: center; align-items: center;
+}
+
+.achievements .el .strings{ top: 0; }
+.achievements .el .strings,
+.achievements .el .strings > div{ position: absolute; }
+
+.achievements .el .text{ font-size: 21px; }
+
+.achievements .el:nth-child(1) .strings{ font-size: 45px; }
+.achievements .el:nth-child(2) .strings{ font-size: 22px; }
+.achievements .el:nth-child(3) .strings{ font-size: 22px; }
+.achievements .el:nth-child(5) .strings{ font-size: 27px }
+.achievements .el:nth-child(6) .strings{ font-size: 25px; }
+
+.achievements .el:nth-child(1) .circle .digits{ color: #c6ccca; font-size: 140px; }
+.achievements .el:nth-child(2) .circle .digits{ color: #ccc8c6; font-size: 175px; }
+.achievements .el:nth-child(3) .circle .digits{ color: #c7c6cc; font-size: 175px; }
+.achievements .el:nth-child(4) .circle .digits{ color: #cfc1c1; font-size: 320px; }
+.achievements .el:nth-child(5) .circle .digits{ color: #c6cbc6; font-size: 300px; }
+.achievements .el:nth-child(6) .circle .digits{ color: #c9c7cd; font-size: 51px; }
+
+.achievements .el:nth-child(1) .strings .prefix{ top: 58px; left: 20px; }
+.achievements .el:nth-child(2) .strings .prefix{ top: 74px; left: 17px; }
+.achievements .el:nth-child(3) .strings .prefix{ top: 66px; left: 20px; }
+.achievements .el:nth-child(5) .strings .prefix{ top: 78px; left: 26px; }
+
+.achievements .el:nth-child(1) .strings .value{ color: #1da67b; font-size: 100px; top: 50px; left: 50px }
+.achievements .el:nth-child(2) .strings .value{ color: #a6571d; font-size: 100px; top: 54px; left: 80px }
+.achievements .el:nth-child(3) .strings .value{ color: #471da6; font-size: 100px; top: 54px; left: 80px }
+.achievements .el:nth-child(4) .strings .value{ color: #a61d1d; font-size: 160px; top: 30px; left: 50px }
+.achievements .el:nth-child(5) .strings .value{ color: #147b00; font-size: 160px; top: 30px; left: 115px }
+.achievements .el:nth-child(6) .strings .value{ color: #960680; font-size: 130px; top: 15px; left: 40px }
+
+.achievements .el:nth-child(1) .strings .suffix{ top: 146px; left: 63px; }
+.achievements .el:nth-child(6) .strings .value+.suffix{ color: #960680; font-size: 30px; top: 146px; left: 63px; }
+.achievements .el:nth-child(6) .strings .suffix:nth-child(3){ top: 179px; left: 55px; }
+
+
+@media (max-width: 1024px){
+	body{ background: #FFF; }
+
+	.wrapper{ max-width: 600px; padding: 0 5%; }
+
+	.hide_for_mobile{ display: none !important; }
+	.hide_for_desktop{ display: block !important; }
+
+	/* header */
+	.header { background: url(/landings_new/images/header/header_mobile.jpg) center; height: 164px; margin-bottom: 0; }
+	.header .header_top .company_name{ font-size: 16px; }
+	.header .header_top .company_name span:nth-child(1){ border-bottom: 1px solid; display: block; }
+	.header .header_top .contact_info{ font-size: 13px; flex-direction: column-reverse; }
+	.header .header_top .contact_info .phone { color: #ff7f00; font-size: 20px; }
+
+	.header .title{ margin-top: 10px; font-size: 25px; }
+	.header .title:last-child{ height: 100px; display: flex !important; justify-content: center; align-items: center; }
+
+	.feedback{
+		background: url(/landings_new/images/bg_black.png) center; 
+		margin-bottom: 50px; padding-top: 0;
+	}
+	.feedback .wrapper{ flex-direction: column-reverse; }
+
+	.feedback .text{
+		background: none; box-shadow: none;
+		font-weight: 500; font-size: 15px; color: #FFF;
+		padding: 0;
+	}
+	.feedback .text .el{
+		background: url(/landings_new/images/header/check.png) left center no-repeat; background-size: 22px auto;
+		margin: 25px auto; padding-left: 32px;
+	}
+	.feedback .text .el:before{ display: none; }
+
+	.feedback .form{ background: none; height: auto; width: 100%; margin: 20px auto 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; }
+	.feedback .form input{ border-radius: 3px; background: #f2f2f2; width: calc(50% - 10px - 10px - 10px); margin:0 0 10px 0; padding: 13px 10px; }
+	.feedback .form .button{ border-radius: 3px; background: #ff7f00; width: 100%; text-transform: uppercase; height: 40px; }
+	.feedback .form .button:hover{ background: #ffa954; }
+
+	/* achievements */
+	.achievements .el{ width: 25vw; height: 25vw; }
+	.achievements .header_wrapper_width_dots h2{ background-color: #FFF; background-image: none; }
+	.achievements .el .circle{ background-size: contain !important; background-repeat: no-repeat !important; }
+	.achievements .el .circle,
+	.achievements .el .strings{ width: 100%; height: 68%; }
+	.achievements .el .circle:after{ content: ""; border-bottom: 3px solid #cfcfcf; height: 100%; display: block; }
+
+	.achievements .el:nth-child(1) .circle{ background: url(/landings_new/images/achievements/themis.png); }
+	.achievements .el:nth-child(2) .circle{ background: url(/landings_new/images/achievements/handshake.png); }
+	.achievements .el:nth-child(3) .circle{ background: url(/landings_new/images/achievements/hammer.png); }
+	.achievements .el:nth-child(4) .circle{ background: url(/landings_new/images/achievements/consulting.png); }
+	.achievements .el:nth-child(5) .circle{ background: url(/landings_new/images/achievements/court.png); }
+	.achievements .el:nth-child(6) .circle{ background: url(/landings_new/images/achievements/money.png); }
+
+	.achievements .el .strings,
+	.achievements .el:nth-child(6) .strings .value+.suffix,
+	.achievements .el .text{ font-size: 2vw !important; }
+
+	.achievements .el .strings{ display: flex; align-content: center; justify-content: center; flex-direction: column; }
+	.achievements .el .strings,
+	.achievements .el .strings .value,
+	.achievements .el:nth-child(6) .strings .suffix:nth-child(2){ color: #FFF !important; }
+	.achievements .el .strings > div{ position: static; }
+	.achievements .el .strings .value{ font-size: 8vw !important; }
+
+	.achievements .el .text{ margin-top: 7px; }
+}
+
+@media (max-width: 480px){
+	.achievements .el{ width: 33vw; height: 33vw; }
+
+	.achievements .el .strings,
+	.achievements .el:nth-child(6) .strings .suffix:nth-child(2),
+	.achievements .el .text{ font-size: 4vw !important; }
+}

@@ -1,0 +1,474 @@
+body{ background-image: none; background-color: #FFF; }
+h2{ text-transform: uppercase; font-weight: 700; margin-bottom: 35px; }
+.wrapper { max-width: 960px; padding-top: 25px; position: relative; }
+.reviews{ display: none; }
+.ui-widget-content,
+.ui-dialog .ui-dialog-content{ border: none; }
+.ui-widget input, .ui-widget select, .ui-widget textarea{ font-family: 'Roboto Condensed', sans-serif; }
+
+/* #header */
+.mainmenu{ border-top: none; border-bottom: 0; background: #e5eeff; z-index: 1000000; }
+.mainmenu .wrapper{ padding-top: 0; }
+.mainmenu .els a.el{ font-size: 14px; }
+.mainmenu .els a.el:nth-child(10):after{ display: none; }
+.mainmenu .els .phone{ display: inline-block; margin-left: 35px; color: #3b66c7; }
+.mainmenu .els .phone-icon{ display: none; }
+
+.header{ background: none; height: auto; margin: 0; }
+.header .wrapper{ padding-bottom: 0; padding-top: 45px; }
+.header .title{
+    text-transform: uppercase; max-width: 740px; margin: 0 auto;
+    font-size: 46px; font-weight: 700; text-align: center; color: #3b66c7;
+}
+.header .small-title{
+    padding: 20px 0; text-transform: uppercase; font-weight: 700; font-size: 32px; text-align: center;
+}
+
+/* #about_book */
+.about_book{
+    background: url(/landings_new/images/galichevsky/book/header-background.png) top no-repeat;
+    background-size: cover;
+}
+.about_book .els{ position: relative; display: flex; justify-content: space-between; align-items: center; }
+
+.about_book .els .el:nth-child(1){
+    background: url(/landings_new/images/galichevsky/book/book-and-hammer.png) left bottom no-repeat;
+    z-index: 1000; padding: 0 10px 50px 260px; display: flex; flex-direction: column; justify-content: center;
+}
+.about_book .els .el:nth-child(1) .thesis{
+    padding: 10px 15px 10px 0; display: flex; justify-content: space-between; align-items: center;
+}
+.about_book .els .el:nth-child(1) .thesis:nth-child(2){ padding-top: 0; }
+.about_book .els .el:nth-child(1) .thesis .text{  width: calc(90% - 10px); font-size: 22px; font-weight: 300; }
+
+.about_book .els .el:nth-child(1) .thesis .text a{ color: #3399ff; text-decoration: none; }
+.about_book .els .el:nth-child(1) .thesis .text a:hover{ text-decoration: underline; }
+.about_book .els .el:nth-child(1) .thesis .icon{
+    width: 10%; height: 40px; max-width: 40px; background-size: 100% !important;
+}
+.about_book .els .el:nth-child(1) .thesis:nth-child(2) .icon{
+    background: url(/landings_new/images/galichevsky/icons/book.png) top no-repeat;
+}
+.about_book .els .el:nth-child(1) .thesis:nth-child(3) .icon{
+    background: url(/landings_new/images/galichevsky/icons/talk-bubble.png) top no-repeat;
+}
+.about_book .els .el:nth-child(1) .thesis:nth-child(4) .icon{
+    background: url(/landings_new/images/galichevsky/icons/books.png) top no-repeat;
+}
+
+body .form{
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px; border-radius: 10px;
+    width: 320px; height: auto; padding: 20px; text-align: center;
+    background: #FFF !important;
+}
+body .form .title{
+    margin: initial; padding: 0;
+    text-transform: uppercase; font-weight: 700; font-size: 22px;
+}
+body .form .title:nth-child(2){ padding: 0 0 9px; font-weight: 700; font-size: 22px; color: inherit; }
+body .form .button{
+    background: none; background-color: #ff7f00; border-radius: 10px; font-weight: 400; font-size: 22px;
+    display: block; margin: 5px auto 0 auto; width: 304px;
+}
+
+body .form input{
+    box-shadow: none; border-radius: 5px; border: 1px solid transparent; padding: 12px 10px !important;
+    font-weight: 300; font-size: 20px; color: #000; background: #f2f2f2 !important;
+}
+
+body .form input.error{ border: 1px solid rgba(255,0,0,0.8); box-shadow: none; }
+
+/* about_author */
+.about_author{ background: url(/landings_new/images/bg_black.png) center; color: #FFF;  }
+.about_author .els{ display: flex; justify-content: space-between; align-content: center; }
+.about_author .els .el:nth-child(1) .thesis{
+    padding: 10px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.about_author .els .el:nth-child(1) .thesis .icon{ background-size: contain !important; }
+.about_author .els .el:nth-child(1) .thesis:nth-child(1) .icon{
+    background: url(/landings_new/images/galichevsky/icons/man-tie.png) center no-repeat;
+    width: 40px; height: 40px;
+}
+.about_author .els .el:nth-child(1) .thesis:nth-child(2) .icon{
+    background: url(/landings_new/images/galichevsky/icons/graph.png) center no-repeat;
+    width: 40px; height: 40px;
+}
+.about_author .els .el:nth-child(1) .thesis:nth-child(3) .icon{
+    background: url(/landings_new/images/galichevsky/icons/e-books.png) center no-repeat;
+    width: 40px; height: 40px;
+}
+.about_author .els .el:nth-child(1) .thesis .text{ width: calc(100% - 40px - 20px); font-size: 22px; font-weight: 300; }
+.about_author .els .el:nth-child(1) .thesis .text a{ color: #3399ff; text-decoration: none; }
+.about_author .els .el:nth-child(1) .thesis .text a span:hover{ text-decoration: underline; }
+
+.about_author .els .el:nth-child(2) .photo{
+    background: url(/landings_new/images/galichevsky/author/author.png) center no-repeat;
+    width: 320px; height: 220px; color: #000;
+    display: flex; align-items: center;
+}
+.about_author .els .el:nth-child(2) .photo div{ font-size: 22px; width: 60%; padding: 0 10px; }
+
+/* why_buy */
+.why_buy .els{ display: flex; justify-content: space-between; padding-bottom: 35px; }
+.why_buy .els .el{ font-size: 22px; width: calc(100%/3 - 15px); font-weight: 300; }
+.why_buy .els .el .header{
+    padding-bottom: 35px; text-transform: uppercase; white-space: nowrap;
+    display: flex; align-items: center; justify-content: space-between;
+}
+.why_buy .els .el .header span{ text-transform: none; font-weight: 700; }
+.why_buy .els .el:nth-child(1) .header{ color: #7079cb; }
+.why_buy .els .el:nth-child(2) .header{ color: #65be62; }
+.why_buy .els .el:nth-child(3) .header{ color: #b85858; }
+
+.why_buy .els .el:nth-child(1) .header .icon{
+    background: url(/landings_new/images/galichevsky/icons/left-arrow.png) top no-repeat;
+    width: 40px; height: 40px;
+}
+.why_buy .els .el:nth-child(2) .header .icon{
+    background: url(/landings_new/images/galichevsky/icons/right-arrow.png) top no-repeat;
+    width: 40px; height: 40px;
+}
+.why_buy .els .el:nth-child(3) .header .icon{
+    background: url(/landings_new/images/galichevsky/icons/master.png) top no-repeat;
+    width: 40px; height: 40px;
+}
+.why_buy .els .el .header .text{ width: calc(100% - 40px - 20px); }
+
+.why_buy .bottom{ display: flex; justify-content: space-between; align-items: center; }
+.why_buy .bottom .icon{
+    background: url(/landings_new/images/galichevsky/advantages/coin.png) center no-repeat;
+    background-size: contain; width: 80px; height: 80px;
+}
+.why_buy .bottom .text{ font-size: 22px; width: calc(100% - 80px - 20px); }
+
+/* prices */
+.prices{
+    background: url(/landings_new/images/bg_black.png) center;
+    color: #fff; font-size: 20px;
+}
+.prices .price-one,
+.prices .price-two{ display: none; }
+.prices .els{ display: flex; justify-content: space-between; }
+.prices .els .el{ display: flex; flex-direction: column; justify-content: center; align-items: center; width: calc(100%/4 - 15px); }
+.prices .els .el .text{ text-align: center; height: 60px; }
+.prices .els .el .icon{ width: 160px; height: 137px; padding-bottom: 20px; }
+.prices .els .el:nth-child(1) .icon{ background: url(/landings_new/images/galichevsky/prices/paper-book.png) left no-repeat; }
+.prices .els .el:nth-child(2) .icon{ background: url(/landings_new/images/galichevsky/prices/e-book.png) left no-repeat; }
+.prices .els .el:nth-child(3) .icon{ background: url(/landings_new/images/galichevsky/prices/audio-book.png) left no-repeat; }
+.prices .els .el:nth-child(4) .icon{ background: url(/landings_new/images/galichevsky/prices/full-complect.png) left no-repeat; }
+.prices .els .el .btn-buy{
+    position: relative;
+    background-color: #3b66c7; border-radius: 5px;
+    width: 160px; padding: 10px 20px; margin: 0 auto; display: block;
+    color: #FFF; text-decoration: none;
+}
+.prices .els .el .btn-buy:before{
+    content: "|"; position: absolute; right: 27px; top: 7px;
+    font-size: 25px; color: #9db3e3
+}
+.prices .els .el .btn-buy:after{
+    content: ""; background: url(/landings_new/images/galichevsky/icons/gray-arrow.png) top no-repeat;
+    width: 12px; height: 21px; position: absolute;
+    right: 10px; top: 12px;
+}
+
+/* confirmation_delivery */
+.confirmation_delivery{
+    background: url(/landings_new/images/galichevsky/feedback/feedback-background.png) center no-repeat; background-color: #e5eeff;
+    font-size: 22px;
+}
+.confirmation_delivery .els{ display: flex; justify-content: space-between; align-items: center; }
+.confirmation_delivery .els .el:nth-child(1){ width: calc(100% - 320px - 50px); line-height: 1.3; font-weight: 300; }
+.confirmation_delivery .els .el .phone{ text-decoration: none; color: #3399ff; }
+.confirmation_delivery .els .el .phone:hover{ text-decoration: underline; }
+
+/* guarantees_decency */
+.guarantees_decency .wrapper{ padding-bottom: 0; }
+.guarantees_decency .els .thesis{
+    padding: 10px; display: flex; justify-content: space-between; align-items: center;
+}
+.guarantees_decency .els .thesis:last-child{ padding-bottom: 20px; }
+.guarantees_decency .els .thesis .icon{ background-size: contain !important; }
+.guarantees_decency .els .thesis:nth-child(1) .icon{
+    background: url(/landings_new/images/galichevsky/guarantees_decency/administrator.png) center no-repeat;
+    width: 40px; height: 40px;
+}
+.guarantees_decency .els .thesis:nth-child(2) .icon{
+    background: url(/landings_new/images/galichevsky/guarantees_decency/ok.png) center no-repeat;
+    width: 40px; height: 40px;
+}
+.guarantees_decency .els .thesis:nth-child(3) .icon{
+    background: url(/landings_new/images/galichevsky/guarantees_decency/voice-reporter.png) center no-repeat;
+    width: 40px; height: 40px;
+}
+.guarantees_decency .els .thesis .text{ width: calc(100% - 40px - 20px); font-size: 22px; font-weight: 300; }
+.guarantees_decency .els .thesis .text a{ color: #3399ff; text-decoration: none; }
+.guarantees_decency .els .thesis .text a:hover{ text-decoration: underline; }
+
+/* photos */
+.photos .els{ display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.photos .els .el{ box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px; line-height: 0; }
+.photos .els .el:nth-child(1){ width: 140px; }
+.photos .els .el:nth-child(2){ width: 300px; }
+.photos .els .el:nth-child(3){ width: 300px; }
+.photos .els .el:nth-child(4){ width: 140px; }
+
+/* from_words_to_deeds */
+.from_words_to_deeds{ background-color: #e5eeff; }
+.from_words_to_deeds .els{ display: flex; justify-content: space-between; }
+.from_words_to_deeds .els .el{ width: calc(50% - 15px); font-size: 22px; }
+.from_words_to_deeds .els .el .name{
+    margin-bottom: 25px; font-weight: 600;
+    display: flex; justify-content: center; align-items: center;
+}
+.from_words_to_deeds .els .el a{ color: #3399ff; text-decoration: none; }
+.from_words_to_deeds .els .el a:hover{ text-decoration: underline; }
+.from_words_to_deeds .els .el .name .icon{ width: 50px; height: 40px; }
+.from_words_to_deeds .els .el:nth-child(1) .name .icon{
+    background: url(/landings_new/images/galichevsky/icons/spb-icon.png) left no-repeat;
+}
+.from_words_to_deeds .els .el:nth-child(2) .name .icon{
+    background: url(/landings_new/images/galichevsky/icons/geo-location.png) left no-repeat;
+}
+.from_words_to_deeds .els .el .thesis{ font-weight: 300; }
+.from_words_to_deeds .els .el .thesis .phone{ text-decoration: none; color: inherit; font-weight: 600; }
+#win_words_to_deeds_feedback{ display: none; }
+#win_words_to_deeds_feedback .title{ color: #000 !important; }
+
+/* what_else_we_offer */
+.what_else_we_offer{ background: url(/landings_new/images/galichevsky/what_else_we_offer/pocket-bg.png) top no-repeat; background-size: cover; }
+.what_else_we_offer h2{ background: rgba(244, 244, 244, 0.8); width: fit-content; margin: 0 auto; }
+.what_else_we_offer .pic{ 
+	background: url(/landings_new/images/galichevsky/what_else_we_offer/i.png) center no-repeat;
+	height: 300px; width: 300px; margin-left: auto;
+	color: #FFF; font-size: 230px; font-weight: 600;
+	display: flex; align-items: center; justify-content: center;
+}
+.what_else_we_offer .button{ 
+	cursor: pointer; background-color: #4b79bb; border-radius: 3px; border: initial; box-shadow: none;
+	text-transform: uppercase; text-decoration: none; text-align: center; color: #FFF; font-size: 32px; font-weight: 600;
+	width: 280px; margin: 0 auto; display: block;
+}
+.what_else_we_offer .button span{ color: #a5bcdd; }
+.what_else_we_offer .button:hover{ box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px; }
+
+/* social_media */
+.social_media{ background: url(/landings_new/images/bg_black.png) center; color: #fff; }
+.social_media .els{ display: flex; justify-content: space-around; align-items: center; }
+.social_media .els .el{ width: 220px; }
+
+/* cooperation */
+.cooperation .els{ display: flex; justify-content: space-between; align-items: center; }
+.cooperation .els .el{ font-size: 22px; font-weight: 300; }
+.cooperation .els .el:nth-child(1){
+    background: url(/landings_new/images/galichevsky/icons/info.png) center no-repeat;
+    width: 66px; height: 66px;
+}
+.cooperation .els .el a{ color: #3399ff; text-decoration: none; }
+.cooperation .els .el a:hover{ text-decoration: underline; }
+.cooperation .els .el:nth-child(2){ width: calc(100% - 66px - 20px); }
+
+/* policy */
+.policy{ background-color: #d9d9d9; }
+.policy .wrapper{ padding-bottom: 25px; }
+.policy .open_policy{
+    color: #a09f9f; text-align: center; display: block; text-decoration: none;
+}
+
+/* footer */
+.footer{ background: url(/landings_new/images/bg_black.png) center; color: #fff; padding: 25px 0; }
+.footer .disclaimer{ font-size: 22px; font-weight: 300; text-align: center; }
+
+@media(min-width: 1024px){
+    .header{ padding: 0; }
+    .about_book .els .el h2{ padding-left: 100px; }
+}
+
+@media(max-width: 1024px){
+    body{ background: #FFF; }
+    .header .wrapper { padding-top: 50px; }
+    .header .title{ font-size: 38px; }
+    h2{ margin-bottom: 15px; font-size: 32px; }
+    .header .small-title{ font-size: 27px;  }
+
+    .wrapper{ max-width: 770px; }
+
+    /* header */
+    .header{ margin-bottom: -20px; }
+
+    .header .title:last-child{ display: flex !important; justify-content: center; align-items: center; }
+    .header .small-title{
+	   background: url(/landings_new/images/galichevsky/book/hammer-bok-mob.png) center bottom no-repeat,
+		  url(/landings_new/images/galichevsky/book/header-background-mob.png) center -30px no-repeat;
+	   background-size: 90%, cover; height: 500px; padding: 0 20px 0 20px; margin: 20px -10px 0;
+	   display: flex; align-items: flex-end;
+    }
+    .header .small-title h2{ padding: 35% 0 35% 50%; font-size: 26px; }
+
+    .mainmenu{ display: block !important; z-index: 100000; }
+    .mainmenu .els{ text-align: center; }
+    .mainmenu .els a.el{ display: none; }
+    .mainmenu .els .phone{ margin-left: 0; }
+    .mainmenu .els .phone span{ display: inline-block !important; color: #000; }
+
+    /* feedback */
+    .about_book{ background: none; }
+    .about_book h2:nth-child(1){ padding-top: 0; margin-top: 0; }
+    .about_book .els{ flex-direction: column; }
+
+    .about_book .els .el:nth-child(1){
+	   padding: 0 0 25px;
+	   box-shadow: none; display: block; background: #FFF;
+    }
+    .about_book .els .el:nth-child(1) .thesis:nth-child(2){ padding-top: 0; }
+    .about_book .els .el:nth-child(1) .thesis:last-child{ padding-bottom: 0; }
+    .about_book .els .el:nth-child(1) .line{
+        margin: 15px auto; padding-left: 32px;
+    }
+    .about_book .wrapper .form{ margin-top: 0; padding-bottom: 0; }
+
+    /* form */
+    .wrapper .form{
+        box-shadow: none; background: none; height: auto; width: calc(100% - 40px);
+        margin: 20px auto 0 auto; padding-bottom: 0;
+        display: flex; flex-wrap: wrap; justify-content: space-between;
+    }
+    .wrapper .form input{
+        border-radius: 3px; background: #f2f2f2; border: 2px solid rgba(0,0,0,0); box-shadow: none;
+        width: calc(100% - 10px - 10px); margin:0 0 10px 0; padding: 13px 10px;
+    }
+    .wrapper .form input.error{ border: 2px solid; border-color: rgba(255,0,0,0.8); }
+    .wrapper .form .button{ border-radius: 3px; background: #ff7f00; width: 100%; text-transform: uppercase; height: 40px; }
+    .wrapper .form .button:hover{ background: #ffa954; }
+
+    /* about_author */
+    .about_author .els{ flex-direction: column-reverse; align-items: center; }
+    .about_author .els .el:nth-child(1) .thesis .text{ font-size: 23px; width: calc(100% - 6% - 20px); }
+    .about_author .els .el:nth-child(1) .thesis:nth-child(1){ padding-top: 0; }
+    .about_author .els .el:nth-child(1) .thesis .icon{ width: 6% !important; max-width: 40px !important; }
+    .about_author .els .el:nth-child(2){ width: 100%; }
+    .about_author .els .el:nth-child(2) .photo{ background-size: 100%; width: 100%; height: 70vw; }
+    .about_author .els .el:nth-child(2) .photo div{ font-size: 33px; text-align: center; }
+
+    /* why_buy */
+    .why_buy .els{ flex-direction: column; }
+    .why_buy .els .el{ font-size: 23px; width: 100%; padding-bottom: 20px; }
+    .why_buy .els .el .header{ padding: 0; margin-bottom: 20px; }
+    .why_buy .els .el:last-child{ padding-bottom: 0; }
+
+    /* prices */
+    .prices .wrapper{ margin-bottom: -20px; }
+    .prices .els{ flex-direction: column; }
+    .prices .els .el{ padding-bottom: 7px; flex-direction: initial; justify-content: flex-start; width: 100%; }
+    .prices .els .el .icon{ background-size: contain !important; width: 20%; max-width: 100px; height: 100px; padding-bottom: 0; }
+    .prices .els .el .price-info{ padding-left: 35px; }
+    .prices .els .el .price-info .text{ height: auto; padding-bottom: 7px; text-align: inherit; }
+    .prices .els .el .btn-buy{ margin: 0; }
+
+    /* guarantees_decency */
+    .guarantees_decency{ background: #E5EEFE; }
+    .guarantees_decency .els .thesis .text{ font-size: 23px; width: calc(100% - 6% - 20px); }
+    .guarantees_decency .els .thesis:nth-child(1){ padding-top: 0; }
+    .guarantees_decency .els .thesis .icon{ width: 6% !important; max-width: 40px !important; }
+    .guarantees_decency .els:nth-child(2){ width: 100%; }
+    .guarantees_decency .els:nth-child(1) .thesis{ padding: 7px 20px !important; }
+
+   /* what_else_we_offer */
+   .what_else_we_offer{ background: url(/landings_new/images/galichevsky/what_else_we_offer/pocket-bg-mob.png) center no-repeat; background-size: cover; }
+   .what_else_we_offer .pic{ 
+		background-size: contain;
+		height: 200px; width: 200px; margin: 65px auto 120px;
+		font-size: 120px;
+   }
+   .what_else_we_offer .button{ max-width: 300px; font-size: 25px; font-weight: 400; padding: 10px 0; }
+
+    /* confirmation_delivery */
+    .confirmation_delivery{ background-image: none; background-color: #FFF; }
+    .confirmation_delivery .wrapper{ padding: 0; }
+    .confirmation_delivery .els{ flex-direction: column; }
+    .confirmation_delivery .els .el{ padding: 25px 20px; }
+    .confirmation_delivery .els .el:nth-child(1){ width: calc(100% - 40px); background-color: #e5eeff; }
+    .confirmation_delivery .form{ padding-top: 0; }
+
+    /* photos */
+    .photos .els .el:nth-child(1){ width: 30%; margin-bottom: 20px; }
+    .photos .els .el:nth-child(2){ width: 66%; margin-bottom: 20px; }
+    .photos .els .el:nth-child(3){ width: 66%; }
+    .photos .els .el:nth-child(4){ width: 30%; }
+
+    /* from_words_to_deeds */
+    .from_words_to_deeds .els{ display: flex; flex-direction: column; }
+    .from_words_to_deeds .els .el{ width: auto; font-weight: 300; }
+    .from_words_to_deeds .els .el:nth-child(1){ margin-bottom: 25px; }
+    .from_words_to_deeds .els .el .name{ justify-content: left; font-weight: 300; }
+
+    /* social_media */
+    .social_media .els{ flex-direction: column; justify-content: center; }
+    .social_media .els .el{ width: 100%; padding-bottom: 25px; }
+    .social_media .els .el:last-child{ padding-bottom: 0; }
+}
+
+@media (max-width: 770px){
+    .about_author .els .el:nth-child(1) .thesis .text,
+    .guarantees_decency .els .thesis .text,
+    .why_buy .els .el,
+    .about_book .els .el:nth-child(1) .thesis .text,
+    .why_buy .bottom .text,
+    .prices .els .el .price-info .text,
+    .prices .els .el .btn-buy,
+    .confirmation_delivery .els .el:nth-child(1),
+    .cooperation .els .el:nth-child(2),
+    .footer .disclaimer,
+    .wrapper .form input,
+    .from_words_to_deeds .els .el,
+    .author_recommendations .els a.el{ font-size: 2.9vw; font-weight: initial; }
+
+    .mainmenu .els .phone{ font-size: 3.4vw; font-weight: initial; }
+
+    .from_words_to_deeds .els .el .name{ font-weight: initial; }
+
+    .about_author .els .el:nth-child(2) .photo div{ font-size: 4vw; }
+
+    .header .small-title{ height: 65vw; }
+
+    .author_recommendations .els .pic{ width: 100px; height: 100px; }
+
+	.what_else_we_offer .button{ font-size: 22px; }
+
+    /* #prices_select_method_of_payment iframe{ transform: scale(0.75, 0.75) translateX(-142px) translateY(0px); } */
+}
+
+@media (max-width: 480px){
+    .about_author .els .el:nth-child(1) .thesis .text,
+    .guarantees_decency .els .thesis .text,
+    .why_buy .els .el,
+    .about_book .els .el:nth-child(1) .thesis .text,
+    .why_buy .bottom .text,
+    .prices .els .el .price-info .text,
+    .prices .els .el .btn-buy,
+    .confirmation_delivery .els .el:nth-child(1),
+    .cooperation .els .el:nth-child(2),
+    .footer .disclaimer,
+    .about_author .els .el:nth-child(2) .photo div,
+    .wrapper .form input,
+    .from_words_to_deeds .els .el,
+    .author_recommendations .els a.el{ font-size: 4.3vw; }
+
+    .mainmenu .els .phone{ font-size: 4.8vw; }
+
+    .header .small-title h2{ font-size: 4.8vw !important; }
+    h2, .header .title{ font-size: 6vw !important; }
+
+    .prices .els .el{ padding-bottom: 15px; }
+    .prices .els .el .price-info{ padding-left: 5%; width: calc(70% - 5%); }
+
+    .author_recommendations .els .pic{ width: 90px; height: 90px; }
+}
+
+
+@media (max-width: 350px){
+    .author_recommendations .els .pic{ width: 60px; height: 40px; }
+    .prices .els .el .icon{ height: 60px; }
+    .prices .els .el .btn-buy{ width: auto; }
+}
