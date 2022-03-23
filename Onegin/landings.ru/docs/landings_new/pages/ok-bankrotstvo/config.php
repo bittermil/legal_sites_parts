@@ -1,9 +1,9 @@
 <?
 
 $config = array(
-    'managerEmail' => 'igor.galichevsky@yandex.ru',
-//	'managerEmail' => 'artemeey.ru@mail.ru',
-//	'managerEmail' => 'alvassilieva@gmail.com',
+    'managerEmail' => '',
+//	'managerEmail' => '',
+//	'managerEmail' => '',
     'title' => 'Экономьте на банкротстве физического лица правильно.',
     'description' => 'Экономьте на банкротстве физического лица правильно.',
     'keywords' => '',

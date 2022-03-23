@@ -1,9 +1,9 @@
 <?
 
 $config = array(
-	'managerEmail' => 'igor.galichevsky@yandex.ru',
-//	'managerEmail' => 'artemeey.ru@mail.ru',
-//	'managerEmail' => 'alvassilieva@gmail.com',
+	'managerEmail' => '',
+//	'managerEmail' => '',
+//	'managerEmail' => '',
 	'title' => 'Банкротство физического лица (гражданина). Все, что нужно знать должнику и кредитору.',
 	'description' => 'Банкротство физического лица (гражданина). Все, что нужно знать должнику и кредитору.',
 	'keywords' => '',

@@ -1,9 +1,9 @@
 <?
 
 $config = array(
-	'managerEmail' => 'info@onegin-consulting.ru',
-//	'managerEmail' => 'artemeey.ru@mail.ru',
-//	'managerEmail' => 'alvassilieva@gmail.com',
+	'managerEmail' => '',
+//	'managerEmail' => '',
+//	'managerEmail' => '',
 	'title' => 'Франшиза «Онегин-Консалтинг»',
 	'description' => 'Франшиза «Онегин-Консалтинг»',
 	'keywords' => 'Франшиза «Онегин-Консалтинг»',

@@ -1,9 +1,9 @@
 <?
 
 $config = array(
-	'managerEmail' => 'info@onegin-consulting.ru',
-//	'managerEmail' => 'artemeey.ru@mail.ru',
-//	'managerEmail' => 'alvassilieva@gmail.com',
+	'managerEmail' => '',
+//	'managerEmail' => '',
+//	'managerEmail' => '',
 	'title' => 'Взыскание долгов с юр. и физ. лиц',
 	'description' => 'Взыскание долгов с юр. и физ. лиц',
 	'keywords' => '',

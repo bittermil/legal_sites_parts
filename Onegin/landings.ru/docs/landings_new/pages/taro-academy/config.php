@@ -1,9 +1,9 @@
 <?
 
 $config = array(
-	'managerEmail' => 'ekaterina.olyanaya@yandex.ru',
-//	'managerEmail' => 'artemeey.ru@mail.ru',
-//	'managerEmail' => 'alvassilieva@gmail.com',
+	'managerEmail' => '',
+//	'managerEmail' => '',
+//	'managerEmail' => '',
 	'title' => 'Таролог Екатерина Ольяная',
 	'description' => 'Таролог Екатерина Ольяная',
 	'keywords' => '',
