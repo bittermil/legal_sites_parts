@@ -38,7 +38,7 @@
 	</div>
 	<div class="el">
 		<?include(dirname(__FILE__).'/feedback_form.php');?>
-		<div class="note">* Техническая поддержка<br> <a href="mailto:info@onegin-consulting.ru">info@onegin-consulting.ru</a></div>
+		<div class="note">* Техническая поддержка<br> <a href=""></a></div>
 
 		<div class="feedback_button">
 			<button class="button">Заказать звонок</button>
